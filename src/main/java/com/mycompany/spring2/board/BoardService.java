@@ -1,2 +1,11 @@
-package com.mycompany.spring2.board;public interface BoardService {
+package com.mycompany.spring2.board;
+
+import java.util.List;
+
+public interface BoardService {
+    public int insertBoard(BoardVO vo);
+    public int deleteBoard(int seq);
+    public int updateBoard(BoardVO vo);
+    public BoardVO getBoard(int seq);
+    public List<BoardVO> getBoardList();
 }
